@@ -1,0 +1,275 @@
+/*codigo en css*/
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-image: url(fondo\ hallowen1.png) ;
+
+max-width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*HEADER*/
+header{
+    background-color: rgb(22, 29, 44);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    padding: 10px;
+
+   
+}
+
+header .logo{
+    cursor: pointer;
+   
+}
+
+header .logo img{
+height: 70px;
+width: auto;
+transition: 0.3s;
+    
+}
+
+header .logo img:hover{
+transform: scale(1.06);
+}
+
+header .redir{
+    list-style: none;
+    align-items: flex-start;
+}
+
+header .redir li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: 0.3s;
+}
+
+header .redir li:hover{
+    transform: scale(1.1);
+}
+
+header .redir a{
+    font-size: 40px;
+    color: rgb(209, 209, 209);
+    padding-right: 10px;
+
+}
+
+header .redir a:hover{
+    color: white;
+}
+
+@media (max-width:1300px){
+    header{
+        flex-direction: column;
+    }
+
+    header .redir a{
+        font-size: 30px;
+    transition: 0.3s;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+
+    header .logo img{
+        height: 50px;
+        width: auto;
+    }
+
+    
+}
+
+.redir a{
+text-decoration: none;
+}
+
+h1{
+   padding:15px 0 ;
+    margin: auto;
+    width: 850px;
+    transition: 2,2s;
+    display: flex;
+    font-size: x-large;
+    color: #e6e6e6;
+}
+
+
+
+/* product card */
+
+@media (min-width: 1000px) {
+    .juego {
+    width: 100%;
+    height: auto;
+    }
+}
+
+.juego {
+display: grid;
+grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+width: 850px;
+margin: 0 auto;
+background-image: linear-gradient(120deg, transparent, rgba(0, 0, 0, 0.61));
+height: 400px;
+}
+
+.portada {
+grid-row: 1/9;
+grid-column: 1/8;
+}
+
+.portada img{
+    max-height: fit-content;
+    }
+
+
+.descripjuego {
+   padding-left: 15px;
+  
+    grid-row: 1/4;
+grid-column: 8/11;
+
+}
+
+.descripjuego img {
+max-width: 100%;
+}
+
+.descjuego {
+    color: #e6e6e6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    padding-right: 5px;
+}
+
+.resen{
+    font-size: 10px;
+}
+
+.juego b {
+    color: rgb(113, 191, 255);
+}
+
+.botones button{
+    background-color: rgb(53, 79, 100);
+    border: none;
+    color: rgb(113, 191, 255);
+    border-radius: 1px;
+    cursor: pointer;
+    height: 30px;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.botones{
+padding-left: 15px;
+padding-top: 30px;
+grid-column: 1/8;
+grid-row: 9/11;
+
+}
+
+
+
+.botones button:hover{
+    color: rgb(230, 230, 230);
+    background-color: rgb(83, 141, 189);
+}
+
+
+
+.juego2{
+    margin: 0 auto;
+   display: grid;
+   grid-column: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    width: 850px;
+
+    overflow: hidden;
+    background-size: 70%;
+}
+
+.compra{
+    border-radius: 5px;
+    grid-column: 1 / 2;
+    height: 60px;
+    background-color: rgb(70, 76, 112);
+}
+.compra h2{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+   margin-left: 10px;
+    border-radius: 5px;
+    color: #e6e6e6;
+}
+
+.recom h3{
+    background-image: linear-gradient(120deg, transparent, rgba(0, 0, 0, 0.61));
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+.recom{
+  background-image: linear-gradient(120deg, transparent, rgba(0, 0, 0, 0.61));
+  grid-column: 2/6;
+  grid-row: 1/2;
+  margin-left: 20px;
+   color: #e6e6e6;
+}
+
+.recom img{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(96, 160, 233);
+}
+
+.recom p{
+    padding-left: 12px;
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.bot-compra button{
+    height: 30px;
+    width: 120px;
+    font-size: 14px;
+    border: none;
+    background-image: linear-gradient(to right, yellowgreen, green);
+    border-radius: 3px;
+    color: #e6e6e6;
+    text-shadow: 1px  1px 1px darkgreen;
+    transition: 0,3s;
+    cursor: pointer;
+}
+
+
+
+.bot-compra{
+    background-color: black;
+    text-align: left;
+    width: fit-content;
+    padding-left:10px;
+    padding-right: 3px;
+    padding-bottom: 3px ;
+    padding-top: 3px ;
+    color:#e6e6e6;
+    margin-left: 260px;
+}
